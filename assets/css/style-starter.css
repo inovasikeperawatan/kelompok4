@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -2772,7 +2773,7 @@ fieldset:disabled a.btn {
 
 .btn-primary:hover {
   color: #fff;
-  background:#ec4214;
+  background: #ec4214;
   border: 2px solid #ec4214;
   box-shadow: 8px 8px 18px 0 rgb(254 76 28 / 5%);
   -webkit-box-shadow: 8px 8px 18px 0 rgb(254 76 28 / 5%);
@@ -2792,7 +2793,7 @@ fieldset:disabled a.btn {
 .btn-primary.disabled,
 .btn-primary:disabled {
   color: #fff;
-  background:#ec4214;
+  background: #ec4214;
   border: 2px solid #ec4214;
   box-shadow: 8px 8px 18px 0 rgb(254 76 28 / 5%);
   -webkit-box-shadow: 8px 8px 18px 0 rgb(254 76 28 / 5%);
@@ -2803,7 +2804,7 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled).active,
 .show>.btn-primary.dropdown-toggle {
   color: #fff;
-  background:#ec4214;
+  background: #ec4214;
   border: 2px solid #ec4214;
   box-shadow: 8px 8px 18px 0 rgb(254 76 28 / 5%);
   -webkit-box-shadow: 8px 8px 18px 0 rgb(254 76 28 / 5%);
@@ -17137,7 +17138,7 @@ a.text-dark:focus {
   --secondary-color: #fe4c1c;
   --third-color: #ffc600;
   --primary-dark: #0160e7;
-  --secondary-dark:#fe4c1c;
+  --secondary-dark: #fe4c1c;
   --font-color: #606060;
   --bg-color: #fff;
   --heading-color: #1a1b1e;
@@ -17150,18 +17151,19 @@ a.text-dark:focus {
   --dropdown-color: #fff;
   --iframe-filter: grayscale(0%);
   --bg-light: rgba(130, 115, 252, .05);
-  --bg-grey:#f0f6ff;
+  --bg-grey: #f0f6ff;
   --footer-bg: #1a1b1e;
   --card-bg: #fff;
 }
+
 [data-theme="dark"] {
   --primary-color: #00c3ff;
   --primary-dark: #0160e7;
   --secondary-color: #fe4c1c;
-  --secondary-dark:#bf2800;
+  --secondary-dark: #bf2800;
   --third-color: #ffc600;
   --font-color: #c2d0da;
-  --bg-color:#131619;
+  --bg-color: #131619;
   --heading-color: #eee;
   --border-color: rgba(255, 255, 255, 0.2);
   --border-color-light: rgba(255, 255, 255, 0.1);
@@ -17169,8 +17171,8 @@ a.text-dark:focus {
   --dropdown-color: #121725;
   --iframe-filter: grayscale(100%);
   --bg-layer: rgb(0 0 0 / 75%);
-  --bg-light:#1b1f23;
-  --bg-grey:#0f1113;
+  --bg-light: #1b1f23;
+  --bg-grey: #0f1113;
   --card-bg: #888c96;
   --footer-bg: #0f1113;
 }
@@ -17334,22 +17336,25 @@ p.white {
   -webkit-box-shadow: 8px 8px 18px 0 rgb(254 76 28 / 30%);
   -moz-box-shadow: 8px 8px 18px 0 rgba(254, 76, 28, .3);
 }
+
 .btn.btn-white {
-  background:#fff;
-  color:#ec4214;
+  background: #fff;
+  color: #ec4214;
   box-shadow: 8px 8px 18px 0 rgb(254 76 28 / 5%);
   -webkit-box-shadow: 8px 8px 18px 0 rgb(254 76 28 / 5%);
   -moz-box-shadow: 8px 8px 18px 0 rgb(254 76 28 / 5%);
 }
+
 .btn.btn-white:hover {
-  background:#ec4214;
+  background: #ec4214;
   color: #fff;
   box-shadow: 8px 8px 18px 0 rgb(254 76 28 / 30%);
   -webkit-box-shadow: 8px 8px 18px 0 rgb(254 76 28 / 30%);
   -moz-box-shadow: 8px 8px 18px 0 rgba(254, 76, 28, .3);
 }
+
 .btn.btn-style:hover {
-  background:#ec4214;
+  background: #ec4214;
   border: 2px solid #ec4214;
   box-shadow: 8px 8px 18px 0 rgb(254 76 28 / 5%);
   -webkit-box-shadow: 8px 8px 18px 0 rgb(254 76 28 / 5%);
@@ -17655,7 +17660,7 @@ button.navbar-toggler.collapsed .icon-expand {
 .header-w3l .navbar .navbar-brand {
   margin: 0;
   padding: 0;
-  font-size:32px;
+  font-size: 32px;
   font-weight: 800;
   color: var(--heading-color);
   text-transform: uppercase;
@@ -18200,15 +18205,19 @@ a.navbar-brand img {
   margin-top: 5px;
   width: 26px;
 }
+
 .icon span.icon-red {
   color: var(--secondary-color);
 }
+
 .icon span.icon-blue {
   color: var(--primary-color);
 }
+
 .icon span.icon-yellow {
   color: var(--third-color);
 }
+
 .whybox-wrap h4 a:hover {
   color: var(--secondary-color);
   transition: 0.3s ease;
@@ -18238,12 +18247,15 @@ a.navbar-brand img {
 .w3l-bottom-grids-6 {
   background: var(--bg-color);
 }
+
 .w3l-bottom-grids-6 .area-box {
   padding: 0 14px;
 }
+
 .w3l-bottom-grids-6 .grids-feature span {
   font-size: 36px;
 }
+
 .w3l-bottom-grids-6 h4 a.title-head {
   margin-top: 25px;
   display: block;
@@ -18253,6 +18265,7 @@ a.navbar-brand img {
   margin-bottom: 15px;
   font-size: 24px;
 }
+
 .w3l-bottom-grids-6 h4 a.title-head:hover {
   color: var(--primary-color);
 }
@@ -18371,10 +18384,12 @@ ul.w3l-right-book li span {
   margin: 0 auto;
   max-width: 680px;
 }
-.w3l-content-3 .welcome-left h6.title-subhny{
+
+.w3l-content-3 .welcome-left h6.title-subhny {
   color: #fff;
   opacity: 0.7;
 }
+
 .w3l-content-3 p {
   color: #fff;
   opacity: 0.8;
@@ -18423,17 +18438,19 @@ ul.w3l-right-book li span {
 }
 
 .w3l-clients blockquote i {
-  font-size:30px;
+  font-size: 30px;
   color: var(--primary-color);
   display: inline-block;
   margin-right: 10px;
 }
+
 .w3l-clients blockquote {
   margin: 0 0 1rem;
   font-weight: 700;
   color: var(--heading-color);
   font-size: 20px;
 }
+
 .w3l-clients .test-img {
   width: 70px;
   height: 70px;
@@ -18538,6 +18555,7 @@ ul.w3l-right-book li span {
   align-items: center;
   background-size: cover;
 }
+
 .breadcrumb-bg::before {
   content: "";
   background: var(--bg-layer);
@@ -18548,6 +18566,7 @@ ul.w3l-right-book li span {
   right: 0;
   z-index: -1;
 }
+
 h2.title {
   color: #fff;
   font-size: 45px;
@@ -18710,6 +18729,7 @@ h2.title {
     font-size: 18px;
     line-height: 22px;
   }
+
   .w3l-team .column-btm {
     padding: 30px 20px;
   }
@@ -18721,6 +18741,7 @@ h2.title {
     line-height: 14px;
   }
 }
+
 @media (max-width: 600px) {
   .w3l-team .column-btm {
     padding: 20px 10px;
@@ -18732,6 +18753,7 @@ h2.title {
 .w3l-contact-10 {
   background: var(--bg-color);
 }
+
 .contacts-sub-5 iframe {
   width: 100%;
   height: 450px;
@@ -18768,7 +18790,7 @@ form.signin-form {
   font-weight: 400;
   line-height: 22px;
   color: var(--font-color);
-  background-color:var(--bg-grey);
+  background-color: var(--bg-grey);
 }
 
 .form-inner-cont textarea {
@@ -18776,7 +18798,7 @@ form.signin-form {
   resize: none;
   padding: 13px 20px;
   margin: 25px 0px;
-  background-color:var(--bg-grey);
+  background-color: var(--bg-grey);
   display: grid;
   font-size: 18px;
   grid-template-columns: .1fr 1fr;
@@ -18803,7 +18825,7 @@ form.signin-form {
   text-align: left;
   border-radius: 6px;
   border: 1px solid var(--bg-grey);
-  background:var(--bg-grey);
+  background: var(--bg-grey);
   position: relative;
   overflow: hidden;
   display: grid;
@@ -18838,6 +18860,7 @@ form.signin-form {
   text-decoration: underline;
   color: var(--primary-color);
 }
+
 .address-grid .pos-icon span.fa {
   font-size: 16px;
   transition: .3s;
@@ -19010,6 +19033,7 @@ form.signin-form {
   display: inline-block;
   margin-right: 5px;
 }
+
 .main-social-footer-29 a {
   color: var(--primary-color);
   width: 56px;
