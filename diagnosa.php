@@ -92,17 +92,22 @@
         $skor = (int)$pilihancard1 + (int)$pilihancard2 + (int)$pilihancard3 + (int)$pilihancard4 + (int)$pilihancard5 + (int)$pilihancard6 + (int)$pilihancard7 + (int)$pilihancard8 + (int)$pilihancard9 + (int)$pilihancard10;
 
         $hasil = "";
+        $detail = "";
 
         if($skor <= 13) {
           $hasil = "Stress Ringan";
+          $detail = "Stres berat merupakan situasi kronis yang dapat berlangsung beberapa
+minggu sampai beberapa tahun yang berisiko tinggi terhadap kesehatan seseorang, seperti perselisihan perkawinan secara terus menerus, kesulitan ekonomi yang berkepanjangan, maupun penyakit fisik jangka panjang";
         } else if($skor <=26) {
-          $hasil = "Stress Menengah";
+          $hasil = "Stress Sedang";
+          $detail = "Stres sedang merupakan stresor yang dihadapi seseorang yang berlangsung beberapa jam sampai beberapa hari, misalnya perselisihan dengan rekan kerja yang tidak terselesaikan, anak yang sakit, maupun ketidakhadiran anggota keluarga dalam waktu yang lama";
         } else if($skor <=40) {
           $hasil = "Stress Berat";
+          $detail = "Stres berat merupakan situasi kronis yang dapat berlangsung beberapa
+minggu sampai beberapa tahun yang berisiko tinggi terhadap kesehatan seseorang, seperti perselisihan perkawinan secara terus menerus, kesulitan ekonomi yang berkepanjangan, maupun penyakit fisik jangka panjang";
         }
-        $hasil = $skor;
 ?>
-      <div class="row mx-3">
+      <div class="row mt-5 mx-3">
           <div class="col-12">
             <div class="card shadow p-2 mb-5 bg-body rounded">
               <div class=" card-body">
@@ -110,6 +115,10 @@
                 <hr>
                 <b><?=$hasil?></b>
                 <br>
+                <?=$detail ?>
+                </div>
+                <div class="card-footer">
+                  Untuk layanan terapi stress <a href=""><span class="w3sub-color"> Klik Disini</span></a>
                 </div>
               </div>
             </div>
@@ -176,7 +185,7 @@
         <!-- Pertanyaan Diagnosa -->
         <div class="row mt-3 mx-3 ">
           <div class="col-12 col-sm-6">
-            <div class="card shadow p-3 mb-5 bg-body rounded">
+            <div class="card shadow p-3 mb-5 bg-body rounded" style="height: 30rem;">
               <div class=" card-body">
                 <p class="card-title fw-bolder">Selama sebulan terakhir, seberapa sering anda marah karena sesuatu yang
                   tidak terduga</p><br>
@@ -272,7 +281,7 @@
             <div class="card shadow p-3 mb-5 bg-body rounded">
               <div class=" card-body">
                 <p class="card-title fw-bolder">Selama sebulan terakhir, seberapa sering anda merasa segala sesuatu yang
-                  terjadi sesuai dengan harapan anda</p><br>
+                  terjadi sesuai dengan harapan anda</p>
                 <hr>
                 <h6 class="card-subtitle mb-2 text-muted pb-2 blockquote-footer">Pertanyaan 5 dari 10</h6>
                 <div class="d-grid gap-2">
@@ -291,7 +300,7 @@
             </div>
           </div>
           <div class="col-12 col-sm-6">
-            <div class="card shadow p-3 mb-5 bg-body rounded">
+            <div class="card shadow p-3 mb-5 bg-body rounded" style="height: 30rem;">
               <div class=" card-body">
                 <p class="card-title fw-bolder">Selama sebulan terakhir, seberapa sering anda merasa tidak mampu
                   menyelesaikan hal-hal yang harus dikerjakan</p>
