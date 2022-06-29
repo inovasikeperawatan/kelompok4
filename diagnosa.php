@@ -67,11 +67,59 @@
     </header>
     <!-- //header -->
   </div>
-
-  <form action="result.php" method="POST">
-    <!-- Data diri -->
-    <div class="w3l-banner-content">
+  <div class="w3l-banner-content">
       <div class="container">
+  <?php
+    include_once("../temuin/connection.php");
+    if(isset($_POST['submit'])) {
+        $nama = $_POST['nama'];
+        $pilihancardAgama = $_POST['pilihancardAgama'];
+        $pilihancardUmur = $_POST['pilihancardUmur'];
+        $pilihancardLingkungan = $_POST['pilihancardLingkungan'];
+        $pilihancard1 = $_POST['pilihancard1'];
+        $pilihancard2 = $_POST['pilihancard2'];
+        $pilihancard3 = $_POST['pilihancard3'];
+        $pilihancard4 = $_POST['pilihancard4'];
+        $pilihancard5 = $_POST['pilihancard5'];
+        $pilihancard6 = $_POST['pilihancard6'];
+        $pilihancard7 = $_POST['pilihancard7'];
+        $pilihancard8 = $_POST['pilihancard8'];
+        $pilihancard9 = $_POST['pilihancard9'];
+        $pilihancard10 = $_POST['pilihancard10'];
+
+        $query = mysqli_query($conn, "INSERT INTO temuin VALUES(NULL,'$nama','$pilihancardAgama','$pilihancardUmur','$pilihancardLingkungan','$pilihancard1','$pilihancard2','$pilihancard3','$pilihancard4','$pilihancard5','$pilihancard6','$pilihancard7','$pilihancard8','$pilihancard9','$pilihancard10')");
+
+        $skor = (int)$pilihancard1 + (int)$pilihancard2 + (int)$pilihancard3 + (int)$pilihancard4 + (int)$pilihancard5 + (int)$pilihancard6 + (int)$pilihancard7 + (int)$pilihancard8 + (int)$pilihancard9 + (int)$pilihancard10;
+
+        $hasil = "";
+
+        if($skor <= 13) {
+          $hasil = "Stress Ringan";
+        } else if($skor <=26) {
+          $hasil = "Stress Menengah";
+        } else if($skor <=40) {
+          $hasil = "Stress Berat";
+        }
+        $hasil = $skor;
+?>
+      <div class="row mx-3">
+          <div class="col-12">
+            <div class="card shadow p-2 mb-5 bg-body rounded">
+              <div class=" card-body">
+                <h5 class="card-title">Hasil</h5>
+                <hr>
+                <b><?=$hasil?></b>
+                <br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<?php
+    } else {
+?>
+    <!-- Data diri -->
+        <form action="" method="POST">
         <div class="row mt-3 mx-3">
           <div class="col-12">
             <div class="card shadow p-2 mb-5 bg-body rounded">
@@ -130,7 +178,8 @@
           <div class="col-12 col-sm-6">
             <div class="card shadow p-3 mb-5 bg-body rounded">
               <div class=" card-body">
-                <p class="card-title fw-bolder">Selama sebulan terakhir, seberapa sering anda marah karena sesuatu yang tidak terduga</p><br>
+                <p class="card-title fw-bolder">Selama sebulan terakhir, seberapa sering anda marah karena sesuatu yang
+                  tidak terduga</p><br>
                 <hr>
                 <h6 class="card-subtitle mb-2 text-muted pb-2 blockquote-footer">Pertanyaan 1 dari 10</h6>
                 <div class="d-grid gap-2">
@@ -152,7 +201,8 @@
           <div class="col-12 col-sm-6">
             <div class="card shadow p-3 mb-5 bg-body rounded">
               <div class=" card-body">
-                <p class="card-title fw-bolder">Selama sebulan terakhir, seberapa sering anda merasa tidak mampu mengontrol hal-hal penting dalam kehidupan anda</p>
+                <p class="card-title fw-bolder">Selama sebulan terakhir, seberapa sering anda merasa tidak mampu
+                  mengontrol hal-hal penting dalam kehidupan anda</p>
                 <hr>
                 <h6 class="card-subtitle mb-2 text-muted pb-2 blockquote-footer">Pertanyaan 2 dari 10</h6>
                 <div class="d-grid gap-2">
@@ -196,7 +246,8 @@
           <div class="col-12 col-sm-6">
             <div class="card shadow p-3 mb-5 bg-body rounded">
               <div class=" card-body">
-                <p class="card-title fw-bolder">Selama sebulan terakhir, seberapa sering anda merasa yakin terhadap kemampuan diri untuk mengatasi masalah pribadi</p>
+                <p class="card-title fw-bolder">Selama sebulan terakhir, seberapa sering anda merasa yakin terhadap
+                  kemampuan diri untuk mengatasi masalah pribadi</p>
                 <hr>
                 <h6 class="card-subtitle mb-2 text-muted pb-2 blockquote-footer">Pertanyaan 4 dari 10</h6>
                 <div class="d-grid gap-2">
@@ -220,7 +271,8 @@
           <div class="col-12 col-sm-6">
             <div class="card shadow p-3 mb-5 bg-body rounded">
               <div class=" card-body">
-                <p class="card-title fw-bolder">Selama sebulan terakhir, seberapa sering anda merasa segala sesuatu yang terjadi sesuai dengan harapan anda</p><br>
+                <p class="card-title fw-bolder">Selama sebulan terakhir, seberapa sering anda merasa segala sesuatu yang
+                  terjadi sesuai dengan harapan anda</p><br>
                 <hr>
                 <h6 class="card-subtitle mb-2 text-muted pb-2 blockquote-footer">Pertanyaan 5 dari 10</h6>
                 <div class="d-grid gap-2">
@@ -241,7 +293,8 @@
           <div class="col-12 col-sm-6">
             <div class="card shadow p-3 mb-5 bg-body rounded">
               <div class=" card-body">
-                <p class="card-title fw-bolder">Selama sebulan terakhir, seberapa sering anda merasa tidak mampu menyelesaikan hal-hal yang harus dikerjakan</p>
+                <p class="card-title fw-bolder">Selama sebulan terakhir, seberapa sering anda merasa tidak mampu
+                  menyelesaikan hal-hal yang harus dikerjakan</p>
                 <hr>
                 <h6 class="card-subtitle mb-2 text-muted pb-2 blockquote-footer">Pertanyaan 6 dari 10</h6>
                 <div class="d-grid gap-2">
@@ -265,7 +318,8 @@
           <div class="col-12 col-sm-6">
             <div class="card shadow p-3 mb-5 bg-body rounded">
               <div class=" card-body">
-                <p class="card-title fw-bolder">Selama sebulan terakhir, seberapa sering anda mampu mengontrol rasa mudah tersinggung dalam kehidupan anda</p>
+                <p class="card-title fw-bolder">Selama sebulan terakhir, seberapa sering anda mampu mengontrol rasa
+                  mudah tersinggung dalam kehidupan anda</p>
                 <hr>
                 <h6 class="card-subtitle mb-2 text-muted pb-2 blockquote-footer">Pertanyaan 7 dari 10</h6>
                 <div class="d-grid gap-2">
@@ -286,7 +340,8 @@
           <div class="col-12 col-sm-6">
             <div class="card shadow p-3 mb-5 bg-body rounded">
               <div class=" card-body">
-                <p class="card-title fw-bolder">Selama sebulan terakhir, seberapa sering anda merasa lebih mampu mengatasi masalah jika dibandingkan dengan orang lain</p>
+                <p class="card-title fw-bolder">Selama sebulan terakhir, seberapa sering anda merasa lebih mampu
+                  mengatasi masalah jika dibandingkan dengan orang lain</p>
                 <hr>
                 <h6 class="card-subtitle mb-2 text-muted pb-2 blockquote-footer">Pertanyaan 8 dari 10</h6>
                 <div class="d-grid gap-2">
@@ -310,7 +365,8 @@
           <div class="col-12 col-sm-6">
             <div class="card shadow p-3 mb-5 bg-body rounded">
               <div class=" card-body">
-                <p class="card-title fw-bolder">Selama sebulan terakhir, seberapa sering anda marah karena adanya masalah yang tidak dapat anda kendalikan</p>
+                <p class="card-title fw-bolder">Selama sebulan terakhir, seberapa sering anda marah karena adanya
+                  masalah yang tidak dapat anda kendalikan</p>
                 <hr>
                 <h6 class="card-subtitle mb-2 text-muted pb-2 blockquote-footer">Pertanyaan 9 dari 10</h6>
                 <div class="d-grid gap-2">
@@ -331,7 +387,8 @@
           <div class="col-12 col-sm-6">
             <div class="card shadow p-3 mb-5 bg-body rounded">
               <div class=" card-body">
-                <p class="card-title fw-bolder">Selama sebulan terakhir, seberapa sering anda merasakan kesulitan yang menumpuk sehingga anda tidak mampu untuk mengatasinya</p>
+                <p class="card-title fw-bolder">Selama sebulan terakhir, seberapa sering anda merasakan kesulitan yang
+                  menumpuk sehingga anda tidak mampu untuk mengatasinya</p>
                 <hr>
                 <h6 class="card-subtitle mb-2 text-muted pb-2 blockquote-footer">Pertanyaan 10 dari 10</h6>
                 <div class="d-grid gap-2">
@@ -357,7 +414,6 @@
           </div>
         </div>
       </div>
-    </div>
     <!-- End Pertanyaan Diagnosa -->
   </form>
 
@@ -444,3 +500,7 @@
 </body>
 
 </html>
+
+<?php
+    }
+?>
