@@ -185,7 +185,7 @@ minggu sampai beberapa tahun yang berisiko tinggi terhadap kesehatan seseorang, 
         <!-- Pertanyaan Diagnosa -->
         <div class="row mt-3 mx-3 ">
           <div class="col-12 col-sm-6">
-            <div class="card shadow p-3 mb-5 bg-body rounded" style="height: 30rem;">
+            <div class="card shadow p-3 mb-5 bg-body rounded">
               <div class=" card-body">
                 <p class="card-title fw-bolder">Selama sebulan terakhir, seberapa sering anda marah karena sesuatu yang
                   tidak terduga</p><br>
