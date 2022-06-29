@@ -22,46 +22,9 @@
     <header id="site-header" class="fixed-top">
       <div class="container">
         <nav class="navbar navbar-expand-lg stroke">
-          <!-- <a class="navbar-brand" href="index.html">
-            SE<span class="fab fa-xbox sub-logo"></span>G
-          </a> -->
-          <!-- if logo is image enable this    -->
           <a class="navbar-brand" href="index.html">
             <img src="assets/images/logo-temuin.png" alt="Your logo" title="Your logo" />
           </a>
-          <!-- <h6 class="mx-2">TERAS</h6> -->
-          <button class="navbar-toggler collapsed bg-gradient" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-            <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-lg-auto" id="navItem">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Beranda</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#halaman_layanan">Diagnosa</a>
-              </li>
-            </ul>
-          </div>
-          <!-- toggle switch for light and dark theme -->
-          <div class="mobile-position ml-5">
-            <nav class="navigation">
-              <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="checkbox">
-                  <input type="checkbox" id="checkbox">
-                  <div class="mode-container">
-                    <i class="gg-sun"></i>
-                    <i class="gg-moon"></i>
-                  </div>
-                </label>
-              </div>
-            </nav>
-          </div>
-          <!-- //toggle switch for light and dark theme -->
         </nav>
       </div>
     </header>
