@@ -74,8 +74,7 @@
               <hr>
               <h6 class="card-subtitle mb-2 text-muted pb-2 blockquote-footer">Pertanyaan 1 dari 10</h6>
               <div class="d-grid gap-2">
-                <input type="radio" class="btn-check" name="pilihancard1" id="card1p1" autocomplete="off" value="0"
-                  required>
+                <input type="radio" class="btn-check" name="pilihancard1" id="card1p1" autocomplete="off" value="0">
                 <label class="btn btn-outline-success" for="card1p1">Tidak Pernah</label>
                 <input type="radio" class="btn-check" name="pilihancard1" id="card1p2" autocomplete="off" value="1">
                 <label class="btn btn-outline-success" for="card1p2">Sangat jarang (1-2x)</label>
@@ -438,9 +437,7 @@
       var total = parseInt(vc1) + parseInt(vc2) + parseInt(vc3) + parseInt(vc4) + parseInt(vc5) + parseInt(vc6) +
         parseInt(vc7) + parseInt(vc8) + parseInt(vc9) + parseInt(vc10);
 
-      if (total <= 10) {
-        isinya = "Belum Melakukan Diagnosa";
-      } else if (total <= 13) {
+      if (total <= 13) {
         isinya =
           "Stres Ringan, stres ringan adalah stres yang tidak merusak aspek fisiologis dari seseorang. Stres ringan umumnya dirasakan oleh setiap orang misalnya lupa, ketiduran, dikritik, dan kemacetan. Stres ringan sering terjadi pada kehidupan seharihari dan kondisi dapat membantu individu menjadi waspada. Situasi ini tidak akan menimbulkan penyakit kecuali jika dihadapi terus menerus. ";
       } else if (total <= 26) {
